@@ -1,0 +1,27 @@
+.navigation {
+  margin: $margin-auto;
+  margin-bottom: 17px;
+  padding-top: 8px;
+  width: $mobile-container-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo {
+  display: none;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navigation__item-svg {
+  width: 16px;
+  height: 16px;
+}

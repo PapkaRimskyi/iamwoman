@@ -1,3 +1,66 @@
-.paragraph {
-  font-size: 36px;
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+  margin: $margin-auto;
+  min-width: $mobile-width;
+  max-width: $mobile-width;
+  font-family: "Cormorant", "PT Serif", serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-color;
+  background-color: $white-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// @media (min-width: $tablet-width) {
+//   body {
+//     max-width: $tablet-width;
+//   }
+// }
+//
+// @media (min-width: $desktop-width) {
+//   body {
+//     max-width: $desktop-width;
+//   }
+// }
