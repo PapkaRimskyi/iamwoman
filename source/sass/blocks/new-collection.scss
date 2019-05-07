@@ -1,0 +1,128 @@
+.new-collection {
+  margin-top: 16px;
+  grid-area: c;
+  display: grid;
+}
+
+.new-collection__catalog {
+  width: 131px;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  justify-self: start;
+  align-self: center;
+  z-index: 1;
+}
+
+.new-collection__catalog-headline {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.new-collection__catalog-link {
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #79100b;
+  border-bottom: 1px solid #79100b;
+  text-decoration: none;
+}
+
+.new-collection__catalog-social-list {
+  display: none;
+}
+
+.new-collection__product-container {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  justify-self: end;
+}
+
+.new-collection__product-description {
+  display: none;
+}
+
+.new-collection__product-switch {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .new-collection {
+    margin-top: 24px;
+  }
+
+  .new-collection__catalog {
+    margin-left: 31px;
+    width: 338px;
+    align-self: end;
+  }
+
+  .new-collection__catalog-headline {
+    margin-bottom: 33px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  .new-collection__catalog-link {
+    margin-bottom: 193px;
+    display: inline-block;
+    width: 135px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .new-collection__catalog-social-list {
+    margin: 0;
+    padding: 0;
+    width: 238px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  .new-collection__catalog-social-link {
+    color: $main-color;
+    text-decoration: none;
+  }
+
+  .new-collection__product-container {
+    margin-right: 59px;
+  }
+
+  .new-collection__product-1 {
+    position: relative;
+  }
+
+  .new-collection__product-description {
+    position: absolute;
+    bottom: 54px;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 27px;
+    width: 341px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(236, 229, 225, 0.8);
+  }
+
+  .new-collection__product-name {
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #91161d;
+  }
+
+  .new-collection__product-value {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #91161d;
+  }
+}

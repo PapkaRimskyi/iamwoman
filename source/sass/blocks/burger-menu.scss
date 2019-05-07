@@ -1,0 +1,36 @@
+.burger-menu {
+  display: inline-block;
+  grid-area: b;
+}
+
+.burger-menu__link {
+  display: flex;
+}
+
+.burger-menu__sellout-18 {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .burger-menu {
+    position: relative;
+    padding-top: 40px;
+    background-color: #ece5e1;
+  }
+
+  .burger-menu__link {
+    justify-content: center;
+  }
+
+  .burger-menu__sellout-18 {
+    position: absolute;
+    bottom: 133px;
+    right: -30px;
+    margin: 0;
+    width: 115px;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+  }
+}

@@ -1,5 +1,25 @@
 .project-header {
+  padding: 9px 15px 41px 14px;
+  display: grid;
+  grid-template-areas:
+    "b n"
+    "c c";
   width: $mobile-width;
   background-image: url("../../img/project-headerBG-mobile.jpg");
   background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .project-header {
+    padding: 0 0 41px 0;
+    grid-template-areas:
+      "b n n"
+      "b c c"
+      "b c c";
+    grid-template-columns: 51px auto auto;
+    width: $tablet-width;
+    background-image: url("../../img/project-headerBG-tablet.jpg");
+    background-position: right bottom;
+  }
 }
