@@ -12,14 +12,24 @@
 
 @media (min-width: $tablet-width) {
   .project-header {
-    padding: 0 0 41px 0;
+    padding: 0;
     grid-template-areas:
       "b n n"
       "b c c"
       "b c c";
     grid-template-columns: 51px auto auto;
+    grid-template-rows: auto 407px 350px;
     width: $tablet-width;
     background-image: url("../../img/project-headerBG-tablet.jpg");
     background-position: right bottom;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .project-header {
+    grid-template-columns: 77px auto auto;
+    grid-template-rows: auto 407px 364px;
+    width: $desktop-width;
+    background-image: url("../../img/project-headerBG-desktop.jpg");
   }
 }

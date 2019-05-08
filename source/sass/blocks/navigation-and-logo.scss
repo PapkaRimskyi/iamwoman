@@ -46,3 +46,34 @@
     width: 222px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .navigation-and-logo {
+    width: 1180px;
+    justify-content: space-between;
+  }
+
+  .navigation-and-logo__logo {
+    margin-left: 78px;
+    width: auto;
+    height: auto;
+  }
+
+  .navigation-and-logo__navigation {
+    margin-right: 159px;
+    margin-top: 2px;
+  }
+
+  .navigation-and-logo__navigation-list {
+    width: 293px;
+  }
+
+  .navigation-and-logo__navigation-item:first-child {
+    margin-right: 23px;
+  }
+
+  .navigation-and-logo__navigation-svg-icon {
+    width: auto;
+    height: auto;
+  }
+}

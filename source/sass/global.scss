@@ -59,8 +59,8 @@ body {
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   body {
-//     max-width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  body {
+    max-width: $desktop-width;
+  }
+}

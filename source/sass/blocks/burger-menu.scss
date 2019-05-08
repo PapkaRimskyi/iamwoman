@@ -24,7 +24,7 @@
 
   .burger-menu__sellout-18 {
     position: absolute;
-    bottom: 133px;
+    bottom: 211px;
     right: -30px;
     margin: 0;
     width: 115px;
@@ -32,5 +32,34 @@
     font-weight: 300;
     letter-spacing: 1px;
     transform: rotate(-90deg);
+  }
+
+  .burger-menu__sellout-18::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    right: 145px;
+    width: 94px;
+    height: 2px;
+    background-color: #342b2b;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .burger-menu {
+    margin-bottom: 79px;
+  }
+
+  .burger-menu__sellout-18 {
+    right: -33px;
+    bottom: 219px;
+    width: 149px;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+  }
+
+  .burger-menu__sellout-18::before {
+    top: 15px;
+    right: 178px;
   }
 }
