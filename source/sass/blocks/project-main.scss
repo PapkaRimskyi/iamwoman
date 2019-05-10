@@ -1,0 +1,16 @@
+.project-main {
+  width: $mobile-width;
+}
+
+@media (min-width: $tablet-width) {
+  .project-main {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .project-main {
+    width: 100%;
+    max-width: $desktop-width;
+  }
+}
