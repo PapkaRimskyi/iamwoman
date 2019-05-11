@@ -1,0 +1,130 @@
+.about-brand {
+  margin: $margin-auto;
+  width: $mobile-container-width;
+}
+
+.about-brand__headline {
+  margin-top: 0;
+  margin-bottom: 42px;
+  font-size: 24px;
+  color: #91171d;
+  text-align: center;
+}
+
+.about-brand__container {
+  position: relative;
+  padding: 24px 15px 15px 15px;
+  background-image: url("../../img/about-brandBG-Mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.about-brand__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 229, 225, 0.8);
+}
+
+.about-brand__content-container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-brand__content-text {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .about-brand {
+    width: $tablet-container-width;
+  }
+
+  .about-brand__headline {
+    margin-bottom: 63px;
+    padding-left: 30px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .about-brand__container {
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../../img/about-brandBG-1-Tablet.jpg"), url("../../img/about-brandBG-2-Tablet.jpg");
+    background-position: top left, bottom right;
+  }
+
+  .about-brand__layer {
+    display: none;
+  }
+
+  .about-brand__content-container {
+    background-color: rgba(236, 229, 225, 0.8);
+  }
+
+  .about-brand__content-container--padding-1 {
+    margin-top: 37px;
+    margin-bottom: 391px;
+    padding: 27px 25px 29px 27px;
+    width: 405px;
+    align-self: flex-end;
+  }
+
+  .about-brand__content-container--padding-2 {
+    margin-bottom: 70px;
+    padding: 44px 20px 25px 15px;
+    width: 396px;
+    align-self: flex-start;
+  }
+
+  .about-brand__content-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-brand {
+    padding-left: 18px;
+    width: 1034px;
+  }
+
+  .about-brand__headline {
+    margin-bottom: 109px;
+    padding-left: 0;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .about-brand__container {
+    background-image: url("../../img/about-brandBG-1-Desktop.jpg"), url("../../img/about-brandBG-2-Desktop.jpg");
+  }
+
+  .about-brand__content-container--padding-1 {
+    margin-top: 69px;
+    margin-bottom: 488px;
+    padding: 27px 32px 26px 40px;
+    width: 541px;
+  }
+
+  .about-brand__content-container--padding-2 {
+    margin-bottom: 71px;
+    padding: 62px 37px 36px 46px;
+    width: 530px;
+  }
+
+  .about-brand__content-text {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

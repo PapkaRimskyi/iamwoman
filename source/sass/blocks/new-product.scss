@@ -1,5 +1,6 @@
 .new-product {
   margin: $margin-auto;
+  margin-bottom: 60px;
   width: $mobile-container-width;
 }
 
@@ -125,6 +126,7 @@
 
 @media (min-width: $tablet-width) {
   .new-product {
+    margin-bottom: 91px;
     width: $tablet-container-width;
   }
 
@@ -212,6 +214,7 @@
 
 @media (min-width: $desktop-width) {
   .new-product {
+    margin-bottom: 160px;
     width: $desktop-container-width;
   }
 
