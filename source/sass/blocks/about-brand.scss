@@ -1,5 +1,6 @@
 .about-brand {
   margin: $margin-auto;
+  margin-bottom: 71px;
   width: $mobile-container-width;
 }
 
@@ -94,6 +95,7 @@
 
 @media (min-width: $desktop-width) {
   .about-brand {
+    margin-bottom: 169px;
     padding-left: 18px;
     width: 1034px;
   }
