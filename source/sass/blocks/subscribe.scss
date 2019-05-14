@@ -1,0 +1,147 @@
+.subscribe {
+  width: $mobile-width;
+  display: inline-block;
+  background-image: url("../../img/subscribe__BG-Mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscribe__form {
+  margin: 24px auto 24px auto;
+  padding: 67px 15px 76px 15px;
+  width: 285px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(236, 229, 225, 0.9);
+}
+
+.subscribe__get-discount {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #91171d;
+}
+
+.subscribe__form-email {
+  margin-bottom: 41px;
+  padding: 0 8px 3px 7px;
+  width: 181px;
+  font-family: inherit;
+  color: $main-color;
+  border: none;
+  border-bottom: 1px solid #342b2b;
+  background-color: transparent;
+}
+
+.subscribe__form-email::placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 15px;
+  text-align: center;
+  color: $main-color;
+}
+
+.subscribe__form-submit {
+  margin-bottom: 8px;
+  padding: 8px 0 10px 0;
+  width: 157px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $white-color;
+  background-color: #91171d;
+  border: 1px solid #91171d;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.subscribe__form-consert {
+  margin: $margin-auto;
+  width: 237px;
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe {
+    margin: $margin-auto;
+    width: $tablet-container-width;
+    display: flex;
+    background-image: url("../../img/subscribe__BG-Tablet.jpg");
+  }
+
+  .subscribe__form {
+    margin: 51px auto 51px auto;
+    padding-bottom: 69px;
+    width: 556px;
+  }
+
+  .subscribe__get-discount {
+    margin-bottom: 31px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .subscribe__form-email {
+    margin: $margin-auto;
+    margin-bottom: 31px;
+    width: 162px;
+    padding-left: 9px;
+    display: block;
+  }
+
+  .subscribe__form-consert {
+    width: 270px;
+    font-size: 14.5px;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+    width: $desktop-container-width;
+    background-image: url("../../img/subscribe__BG-Desktop.jpg");
+  }
+
+  .subscribe__form {
+    margin: 42px auto 62px 162px;
+    padding: 73px 15px 86px 15px;
+    width: 876px;
+  }
+
+  .subscribe__get-discount {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .subscribe__form-email {
+    margin-bottom: 24px;
+    padding-left: 16px;
+    width: 238px;
+    font-size: 16.5px;
+    line-height: 16px;
+  }
+
+  .subscribe__form-email::placeholder {
+    font-size: 16.8px;
+    line-height: 16px;
+  }
+
+  .subscribe__form-submit {
+    margin-left: 18px;
+    margin-bottom: 13px;
+    padding-bottom: 8px;
+    width: 167px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .subscribe__form-consert {
+    width: 300px;
+    font-size: 15.3px;
+  }
+
+}

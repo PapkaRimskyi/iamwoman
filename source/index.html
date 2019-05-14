@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="project-header">
+  <header class="project-header" id="header-id">
     <section class="burger-menu">
       <h2 class="visually-hidden">Кнопка меню</h2>
       <a href="#" class="burger-menu__link">
@@ -64,6 +64,7 @@
       </nav>
     </div>
     <section class="new-collection">
+      <h2 class="visually-hidden">Раздел с новой коллекцией</h2>
       <section class="new-collection__catalog">
         <h3 class="new-collection__catalog-headline">Новая<br> круизная коллекция &#699;19</h3>
         <a href="#" class="new-collection__catalog-link">Перейти в каталог</a>
@@ -110,10 +111,32 @@
         </div>
       </section>
     </section>
+    <div class="navigation-anchors navigation-anchors--1">
+      <ul class="navigation-anchors__list">
+        <li class="navigation-anchors__item">
+          <a href="#header-id" class="navigation-anchors__item-link navigation-anchors__item-link--active">01</a>
+          <span class="visually-hidden">Ссылка в шапку сайта</span>
+        </li>
+        <li class="navigation-anchors__item">
+          <a href="#new-product-id" class="navigation-anchors__item-link">02</a>
+          <span class="visually-hidden">Ссылка в раздел "Новое поступление"</span>
+        </li>
+        <li class="navigation-anchors__item">
+          <a href="#about-brand-id" class="navigation-anchors__item-link">03</a>
+          <span class="visually-hidden">Ссылка в раздел "О бренде"</span>
+        </li>
+        <li class="navigation-anchors__item">
+          <a href="#" class="navigation-anchors__item-link">04</a>
+        </li>
+        <li class="navigation-anchors__item">
+          <a href="#" class="navigation-anchors__item-link">05</a>
+        </li>
+      </ul>
+    </div>
 
   </header>
   <main class="project-main">
-    <section class="new-product">
+    <section class="new-product" id="new-product-id">
       <h2 class="new-product__headline">Новое поступление</h2>
       <ul class="new-product__list">
         <li class="new-product__item"><a href="#" class="new-product__item-link new-product__item-link--active">Платья</a></li>
@@ -187,8 +210,30 @@
         </a>
       </div>
       <a href="#" class="new-product__see-all-link">Смотреть все</a>
+      <div class="navigation-anchors navigation-anchors--2">
+        <ul class="navigation-anchors__list">
+          <li class="navigation-anchors__item">
+            <a href="#new-product-id" class="navigation-anchors__item-link navigation-anchors__item-link--active">02</a>
+            <span class="visually-hidden">Ссылка в раздел "Новое поступление"</span>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#header-id" class="navigation-anchors__item-link">01</a>
+            <span class="visually-hidden">Ссылка в шапку сайта</span>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#about-brand-id" class="navigation-anchors__item-link">03</a>
+            <span class="visually-hidden">Ссылка в раздел "О бренде"</span>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#" class="navigation-anchors__item-link">04</a>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#" class="navigation-anchors__item-link">05</a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="about-brand">
+    <section class="about-brand" id="about-brand-id">
       <h2 class="about-brand__headline">О бренде</h2>
       <div class="about-brand__container">
         <div class="about-brand__layer"></div>
@@ -199,6 +244,28 @@
         <div class="about-brand__content-container about-brand__content-container--padding-2">
           <p class="about-brand__content-text">Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женственные формы и жилеты, вписывающшиеся в любой гардероб современной женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.</p>
         </div>
+      </div>
+      <div class="navigation-anchors navigation-anchors--3">
+        <ul class="navigation-anchors__list">
+          <li class="navigation-anchors__item">
+            <a href="#about-brand-id" class="navigation-anchors__item-link navigation-anchors__item-link--active">03</a>
+            <span class="visually-hidden">Ссылка в раздел "О бренде"</span>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#new-product-id" class="navigation-anchors__item-link">02</a>
+            <span class="visually-hidden">Ссылка в раздел "Новое поступление"</span>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#header-id" class="navigation-anchors__item-link">01</a>
+            <span class="visually-hidden">Ссылка в шапку сайта</span>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#" class="navigation-anchors__item-link">04</a>
+          </li>
+          <li class="navigation-anchors__item">
+            <a href="#" class="navigation-anchors__item-link">05</a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="blog">
@@ -262,6 +329,15 @@
         </section>
       </div>
       <a href="#" class="blog__blog-link">Перейти в блог</a>
+    </section>
+    <section class="subscribe">
+      <h2 class="visually-hidden">Раздел с подпиской на рассылки новостей от I AM WOMEN</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="subscribe__form">
+        <p class="subscribe__get-discount">Подпишись на новости I&nbsp;AM&nbsp;WOMEN<br> и получите скидку 5% на&nbsp;следующую покупку</p>
+        <input type="email" name="email" class="subscribe__form-email" placeholder="Ваш E-mail" required>
+        <button class="subscribe__form-submit" type="submit">Подписаться</button>
+        <p class="subscribe__form-consert">Подписываясь на новости, вы даёте согласие на&nbsp;обработку персональных данных</p>
+      </form>
     </section>
   </main>
 

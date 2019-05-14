@@ -29,6 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .project-header {
+    position: relative;
     margin-bottom: 162px;
     grid-template-columns: 77px auto auto;
     grid-template-rows: auto 407px 364px;

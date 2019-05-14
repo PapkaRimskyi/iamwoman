@@ -214,6 +214,7 @@
 
 @media (min-width: $desktop-width) {
   .new-product {
+    position: relative;
     margin-bottom: 160px;
     width: $desktop-container-width;
   }
