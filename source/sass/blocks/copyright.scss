@@ -1,0 +1,25 @@
+.copyright {
+  padding-bottom: 27px;
+  width: 177px;
+  margin-left: auto;
+}
+
+.copyright__content {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 30px;
+    width: 181px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-right: 108px;
+  }
+}

@@ -1,19 +1,17 @@
-.project-main {
-  margin-bottom: 91px;
+.project-footer {
   width: $mobile-width;
 }
 
 @media (min-width: $tablet-width) {
-  .project-main {
-    margin-bottom: 141px;
+  .project-footer {
     width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .project-main {
-    margin-bottom: 160px;
+  .project-footer {
     width: 100%;
     max-width: $desktop-width;
+    display: flex;
   }
 }
