@@ -15,7 +15,7 @@
 .about-brand__container {
   position: relative;
   padding: 24px 15px 15px 15px;
-  background-image: url("../../img/about-brandBG-Mobile.jpg");
+  background-image: url("../img/about-brandBG-Mobile.jpg");
   background-repeat: no-repeat;
 }
 
@@ -61,7 +61,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../../img/about-brandBG-1-Tablet.jpg"), url("../../img/about-brandBG-2-Tablet.jpg");
+    background-image: url("..//img/about-brandBG-1-Tablet.jpg"), url("../img/about-brandBG-2-Tablet.jpg");
     background-position: top left, bottom right;
   }
 
@@ -109,7 +109,7 @@
   }
 
   .about-brand__container {
-    background-image: url("../../img/about-brandBG-1-Desktop.jpg"), url("../../img/about-brandBG-2-Desktop.jpg");
+    background-image: url("../img/about-brandBG-1-Desktop.jpg"), url("../img/about-brandBG-2-Desktop.jpg");
   }
 
   .about-brand__content-container--padding-1 {

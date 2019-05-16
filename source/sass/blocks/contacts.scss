@@ -197,7 +197,11 @@
   }
 
   .contacts__table-cell-link-svg {
-    width: auto;
-    height: auto;
+    width: 45px;
+    height: 45px;
+  }
+
+  .contacts__table-cell-link-svg--mastercard {
+    width: 71px;
   }
 }

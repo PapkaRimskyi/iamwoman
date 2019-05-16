@@ -17,17 +17,13 @@ var pump = require('pump');
 var concat = require('gulp-concat');
 var order = require('gulp-order');
 
+gulp.task('js-file-dist', function () {
+  return gulp.src('source/js/*.js')
+  .pipe(gulp.dest('build/js'))
+});
+
 gulp.task('js_min', function () {
   return gulp.src('source/js/js_module/*.js')
-    .pipe(order([
-      'selectorCollection.js',
-      'randomNumber.js',
-      'generalInteraction.js',
-      'enter-participants-popup.js',
-      'qualifyingStage.js',
-      'winnerStage.js',
-      'loserStage.js',
-    ]))
   .pipe(concat('javascript.js'))
   .pipe(gulp.dest('build/js'))
   .pipe(uglify())
@@ -42,7 +38,8 @@ gulp.task('css', function () {
     .pipe(postcss([
       autoprefixer({
         cascade: false,
-        browsers: ['last 2 versions']
+        browsers: ['last 2 versions'],
+        grid: true
       })
     ]))
     .pipe(gulp.dest('build/css'))
@@ -107,6 +104,6 @@ gulp.task('html', function () {
   .pipe(gulp.dest('build'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'js_min'));
+gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'js_min', 'js-file-dist'));
 
 gulp.task('start', gulp.series('build', 'server'));

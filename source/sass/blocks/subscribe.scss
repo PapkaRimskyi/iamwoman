@@ -1,7 +1,7 @@
 .subscribe {
   width: $mobile-width;
   display: inline-block;
-  background-image: url("../../img/subscribe__BG-Mobile.jpg");
+  background-image: url("../img/subscribe__BG-Mobile.jpg");
   background-repeat: no-repeat;
 }
 
@@ -69,7 +69,7 @@
     margin: $margin-auto;
     width: $tablet-container-width;
     display: flex;
-    background-image: url("../../img/subscribe__BG-Tablet.jpg");
+    background-image: url("../img/subscribe__BG-Tablet.jpg");
   }
 
   .subscribe__form {
@@ -102,7 +102,7 @@
 @media (min-width: $desktop-width) {
   .subscribe {
     width: $desktop-container-width;
-    background-image: url("../../img/subscribe__BG-Desktop.jpg");
+    background-image: url("../img/subscribe__BG-Desktop.jpg");
   }
 
   .subscribe__form {
