@@ -1,6 +1,7 @@
 .burger-menu {
   display: inline-block;
-  grid-area: b;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .burger-menu__link {
@@ -11,10 +12,17 @@
   display: none;
 }
 
+@supports (grid-area: b) {
+  .burger-menu {
+    grid-area: b;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .burger-menu {
     position: relative;
     padding-top: 40px;
+    grid-row: 1 / 4;
     background-color: #ece5e1;
   }
 
