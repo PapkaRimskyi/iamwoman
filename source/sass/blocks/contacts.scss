@@ -3,7 +3,7 @@
 }
 
 .contacts__container {
-  margin: 0 70px 49px 9px;
+  margin: 0 70px 49px 13px;
   padding-top: 25px;
   width: 257px;
 }
@@ -35,7 +35,7 @@
 }
 
 .contacts__table-data {
-  padding-left: 27px;
+  padding-left: 20px;
 }
 
 .contacts__table-data--padding-top {
@@ -50,7 +50,14 @@
 .contacts__table-cell-list {
   margin: 0;
   padding: 0;
+  font-family: $open-sans;
+  font-weight: 400;
   list-style-type: none;
+}
+
+.contacts__table-cell-list .contacts__table-cell-link {
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .contacts__table-cell-item:not(:last-child) {
@@ -184,7 +191,7 @@
   }
 
   .contacts__table-cell-list {
-    width: 243px;
+    width: 236px;
   }
 
   .contacts__table-cell-list--system-investing {

@@ -9,8 +9,8 @@
   }
 
   .navigation-anchors--1 {
-    top: 255px;
-    right: 100px;
+    top: 260px;
+    right: 102px;
   }
 
   .navigation-anchors--2 {
@@ -29,11 +29,16 @@
     list-style-type: none;
   }
 
+  .navigation-anchors__item {
+    text-align: center;
+  }
+
   .navigation-anchors__item-link {
-    margin-bottom: 29px;
+    margin-bottom: 32px;
     display: inline-block;
-    font-size: 20px;
-    line-height: 20px;
+    font-family: $open-sans;
+    font-size: 12px;
+    line-height: 12px;
     font-weight: 400;
     color: $main-color;
     text-decoration: none;
@@ -41,10 +46,10 @@
 
   .navigation-anchors__item-link--active {
     position: relative;
-    margin-bottom: 127px;
-    font-size: 25px;
+    margin-bottom: 130px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 16px;
     color: #91171d;
   }
 

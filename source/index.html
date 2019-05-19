@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/Cormorant-Medium.woff" as="font">
   <link rel="preload" href="fonts/Cormorant-Regular.woff" as="font">
   <link rel="preload" href="fonts/Cormorant-SemiBold.woff" as="font">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font">
 </head>
 
 <body>
@@ -36,6 +37,9 @@
     <symbol id="new-product__product__svg-like">
       <path d="M51.481 14.309c-.753-8.3-6.619-14.316-13.96-14.316a13.873 13.873 0 0 0-11.884 6.858 13.37 13.37 0 0 0-11.6-6.859C6.694-.008.827 6.011.075 14.308a14.779 14.779 0 0 0 .438 5.441 23.341 23.341 0 0 0 7.142 11.93l17.97 16.326L43.904 31.68a23.344 23.344 0 0 0 7.142-11.932 14.813 14.813 0 0 0 .435-5.439zm-2.371 4.985A21.347 21.347 0 0 1 42.581 30.2L25.637 45.334 8.988 30.208a21.361 21.361 0 0 1-6.543-10.915 12.913 12.913 0 0 1-.413-4.669l.015-.1C2.692 7.255 7.732 1.978 14.034 1.978a11.629 11.629 0 0 1 10.684 7.464l.914 2.168.914-2.168a11.984 11.984 0 0 1 10.98-7.463c6.3 0 11.342 5.277 12 12.64a12.9 12.9 0 0 1-.412 4.675z"
         fill-rule="evenodd" />
+    </symbol>
+    <symbol id="new-product__product-img-switch">
+      <path d="M6.532 1.146L1.844 6.478l4.688 5.332" fill="none" stroke="#342b2b"/>
     </symbol>
     <symbol id="contacts__table-cell-link-svg-1">
       <image width="45" height="45" xlink:href="data:img/png;base64,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"/>
@@ -148,7 +152,7 @@
     <div class="navigation-anchors navigation-anchors--1">
       <ul class="navigation-anchors__list">
         <li class="navigation-anchors__item">
-          <a href="#header-id" class="navigation-anchors__item-link navigation-anchors__item-link--active" aria-label="Переход в шапку сайта">01</a>
+          <a class="navigation-anchors__item-link navigation-anchors__item-link--active" aria-label="Переход в шапку сайта">01</a>
         </li>
         <li class="navigation-anchors__item">
           <a href="#new-product-id" class="navigation-anchors__item-link" aria-label="Переход в раздел «Новое поступление»">02</a>
@@ -195,6 +199,18 @@
               <source media="(min-width: 764px)" srcset="img/new-product__product-img-1Tablet.jpg 1x">
               <img src="img/new-product__product-img-1Mobile.jpg" alt="Изображение продукта" class="new-product__product-img">
             </picture>
+            <div class="new-product__product-switch-preview">
+              <a href="#" class="new-product__product-switch-link-img">
+                <svg class="new-product__product-img-switch" width="7.031" height="12.969" viewBox="0 0 7.031 12.969">
+                  <use xlink:href="#new-product__product-img-switch"></use>
+                </svg>
+              </a>
+              <a href="#" class="new-product__product-switch-link-img">
+                <svg class="new-product__product-img-switch new-product__product-img-switch--right" width="7.031" height="12.969" viewBox="0 0 7.031 12.969">
+                  <use xlink:href="#new-product__product-img-switch"></use>
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="new-product__product-description-container">
             <h3 class="new-product__product-description-name">Платье - боди</h3>
@@ -216,6 +232,18 @@
               <source media="(min-width: 764px)" srcset="img/new-product__product-img-2Tablet.jpg 1x">
               <img src="img/new-product__product-img-2Mobile.jpg" alt="Изображение продукта" class="new-product__product-img">
             </picture>
+            <div class="new-product__product-switch-preview new-product__product-switch-preview--position">
+              <a href="#" class="new-product__product-switch-link-img">
+                <svg class="new-product__product-img-switch" width="7.031" height="12.969" viewBox="0 0 7.031 12.969">
+                  <use xlink:href="#new-product__product-img-switch"></use>
+                </svg>
+              </a>
+              <a href="#" class="new-product__product-switch-link-img">
+                <svg class="new-product__product-img-switch new-product__product-img-switch--right" width="7.031" height="12.969" viewBox="0 0 7.031 12.969">
+                  <use xlink:href="#new-product__product-img-switch"></use>
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="new-product__product-description-container">
             <h3 class="new-product__product-description-name">Этническое платье</h3>
@@ -237,14 +265,26 @@
               <source media="(min-width: 764px)" srcset="img/new-product__product-img-3Tablet.jpg 1x">
               <img src="img/new-product__product-img-3Mobile.jpg" alt="Изображение продукта" class="new-product__product-img">
             </picture>
+            <div class="new-product__product-switch-preview new-product__product-switch-preview--position">
+              <a href="#" class="new-product__product-switch-link-img">
+                <svg class="new-product__product-img-switch" width="7.031" height="12.969" viewBox="0 0 7.031 12.969">
+                  <use xlink:href="#new-product__product-img-switch"></use>
+                </svg>
+              </a>
+              <a href="#" class="new-product__product-switch-link-img">
+                <svg class="new-product__product-img-switch new-product__product-img-switch--right" width="7.031" height="12.969" viewBox="0 0 7.031 12.969">
+                  <use xlink:href="#new-product__product-img-switch"></use>
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="new-product__product-description-container">
             <h3 class="new-product__product-description-name">Шелковое платье <span class="new-product__product-description-name new-product__product-description-name--desktop-display">с принтом</span></h3>
             <p class="new-product__product-description-price new-product__product-description-price--margin-3">4 800 рублей</p>
           </div>
         </section>
-        <a href="#" class="new-product__product-switch-link new-product__product-switch-link--right" aria-label="Кнопка для переключения к следующему товару">
-          <svg class="new-product__product-switch" width="16.031" height="30" viewBox="0 0 16.031 30">
+        <a href="#" class="new-product__product-switch-link" aria-label="Кнопка для переключения к следующему товару">
+          <svg class="new-product__product-switch new-product__product-switch--right" width="16.031" height="30" viewBox="0 0 16.031 30">
             <use xlink:href="#new-product__product-switch"></use>
           </svg>
         </a>
@@ -253,7 +293,7 @@
       <div class="navigation-anchors navigation-anchors--2">
         <ul class="navigation-anchors__list">
           <li class="navigation-anchors__item">
-            <a href="#new-product-id" class="navigation-anchors__item-link navigation-anchors__item-link--active" aria-label="Переход в раздел «Новое поступление»">02</a>
+            <a class="navigation-anchors__item-link navigation-anchors__item-link--active" aria-label="Переход в раздел «Новое поступление»">02</a>
           </li>
           <li class="navigation-anchors__item">
             <a href="#header-id" class="navigation-anchors__item-link" aria-label="Переход в шапку сайта">01</a>
@@ -286,7 +326,7 @@
       <div class="navigation-anchors navigation-anchors--3">
         <ul class="navigation-anchors__list">
           <li class="navigation-anchors__item">
-            <a href="#about-brand-id" class="navigation-anchors__item-link navigation-anchors__item-link--active" aria-label="Переход в раздел «О бренде»">03</a>
+            <a class="navigation-anchors__item-link navigation-anchors__item-link--active" aria-label="Переход в раздел «О бренде»">03</a>
           </li>
           <li class="navigation-anchors__item">
             <a href="#new-product-id" class="navigation-anchors__item-link" aria-label="Переход в раздел «Новое поступление»">02</a>
