@@ -149,6 +149,106 @@
         </div>
       </section>
     </section>
+    <section class="menu-is-open">
+      <div class="menu-is-open__container">
+        <div class="menu-is-open__buttons-container">
+          <a href="#" class="menu-is-open__button-svg-burger" aria-label="Меню в шапке сайта">
+            <svg class="burger-menu__svg-burger" xmlns="http://www.w3.org/2000/svg" width="35" height="18" viewBox="0 0 35 18">
+              <defs>
+                <filter id="a" filterUnits="userSpaceOnUse">
+                  <feFlood result="flood" flood-color="#352f2f" />
+                  <feComposite result="composite" operator="in" in2="SourceGraphic" />
+                  <feBlend result="blend" in2="SourceGraphic" />
+                </filter>
+              </defs>
+              <g filter="url(#a)" fill="#fff" stroke="#fff" stroke-width="2" fill-rule="evenodd">
+                <path d="M1 1h33M16 8h18M1 15h18" />
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="menu-is-open__button-close-menu" aria-label="Закрыть навигационное меню в шапке сайта"></a>
+        </div>
+        <div class="menu-is-open__navigation-list-container">
+          <ul class="menu-is-open__navigation-list-catalog menu-is-open__navigation-list-catalog--1">
+            <li class="menu-is-open__navigation-list-item">
+              <h2 class="menu-is-open__navigation-list-headline">Каталог</h2>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Пальто</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Жилеты и жакеты</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Костюмы</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Трикотаж</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Платья</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Блузы и топы</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Футболки</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Юбки и брюки</a>
+            </li>
+            <li class="menu-is-open__navigation-list-item">
+              <a href="#" class="menu-is-open__navigation-list-item-link">Аксессуары</a>
+            </li>
+          </ul>
+          <div class="menu-is-open__navigation-list-container-2">
+            <ul class="menu-is-open__navigation-list-catalog menu-is-open__navigation-list-catalog--2">
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">О бренде</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Оферта</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Оплата и доставка</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Возврат</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Контакты</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Отзывы</a>
+              </li>
+            </ul>
+            <ul class="menu-is-open__navigation-list-catalog menu-is-open__navigation-list-catalog--3">
+              <li class="menu-is-open__navigation-list-item menu-is-open__navigation-list-item--mobile-display">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Sale</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item menu-is-open__navigation-list-item--mobile-display">
+                <a href="#" class="menu-is-open__navigation-list-item-link">New</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Looks</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Блог</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Streetstyle</a>
+              </li>
+              <li class="menu-is-open__navigation-list-item">
+                <a href="#" class="menu-is-open__navigation-list-item-link">Войти в личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-is-open__site-search-container">
+            <input type="text" class="menu-is-open__site-search" placeholder="Найти на сайте">
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="navigation-anchors navigation-anchors--1">
       <ul class="navigation-anchors__list">
         <li class="navigation-anchors__item">
@@ -437,7 +537,7 @@
             <th class="footer-menu__table-header">
               <p class="footer-menu__table-cell-name">Каталог</p></th>
             <th class="footer-menu__table-header footer-menu__table-header--padding-left">
-              <p class="footer-menu__table-cell-name">О бренде</p>
+              <a href="#" class="footer-menu__table-cell-name">О бренде</a>
             </th>
             <th class="footer-menu__table-header footer-menu__table-header--display footer-menu__table-header--padding-left"></th>
           </tr>
@@ -586,6 +686,7 @@
     </section>
   </footer>
   <script src="js/picturefill.min.js"></script>
+  <script src="js/javascript.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 .subscribe {
+  margin-bottom: 91px;
   width: $mobile-width;
   display: inline-block;
   background-image: url("../img/subscribe__BG-Mobile.jpg");
@@ -58,6 +59,7 @@
 @media (min-width: $tablet-width) {
   .subscribe {
     margin: $margin-auto;
+    margin-bottom: 141px;
     width: $tablet-container-width;
     display: flex;
     background-image: url("../img/subscribe__BG-Tablet.jpg");
@@ -92,6 +94,7 @@
 
 @media (min-width: $desktop-width) {
   .subscribe {
+    margin-bottom: 160px;
     width: $desktop-container-width;
     background-image: url("../img/subscribe__BG-Desktop.jpg");
   }
