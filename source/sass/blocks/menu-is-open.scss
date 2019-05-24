@@ -39,6 +39,16 @@
   cursor: pointer;
 }
 
+.menu-is-open__button-svg-burger:hover,
+.menu-is-open__button-close-menu:hover {
+  opacity: 0.6;
+}
+
+.menu-is-open__button-svg-burger:active,
+.menu-is-open__button-close-menu:active {
+  opacity: 0.2;
+}
+
 .menu-is-open__navigation-list-container {
   margin-left: 24px;
   width: 268px;
@@ -85,6 +95,15 @@
   line-height: 16px;
   color: $main-color;
   text-decoration: none;
+}
+
+.menu-is-open__navigation-list-item-link:hover {
+  border-bottom: 1px solid #000;
+}
+
+.menu-is-open__navigation-list-item-link:active {
+  opacity: 0.4;
+  border-bottom: none;
 }
 
 .menu-is-open__site-search-container {

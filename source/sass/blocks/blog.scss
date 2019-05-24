@@ -72,6 +72,15 @@
   border-bottom: 1px solid #79100b;
 }
 
+.blog__blog-link:hover {
+  opacity: 0.6;
+}
+
+.blog__blog-link:active {
+  border-bottom-color: transparent;
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .blog {
     margin-bottom: 105px;

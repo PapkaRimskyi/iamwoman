@@ -65,4 +65,12 @@
     color: $main-color;
     text-decoration: none;
   }
+
+  .footer-menu__table-cell-link:hover {
+    border-bottom: 1px solid #000000;
+  }
+
+  .footer-menu__table-cell-link:active {
+    opacity: 0.3;
+  }
 }

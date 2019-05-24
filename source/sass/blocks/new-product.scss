@@ -32,7 +32,19 @@
 }
 
 .new-product__item-link--active {
-  text-decoration: underline;
+  border-bottom: 1px solid #000000;
+}
+
+.new-product__item-link:active {
+  opacity: 0.2;
+}
+
+.new-product__item-link:not(.new-product__item-link--active):hover {
+  border-bottom: 1px solid #000000;
+}
+
+.new-product__item-link--active:hover {
+  opacity: 0.6;
 }
 
 .new-product__product-container {
@@ -51,6 +63,15 @@
 .new-product__product-switch--right {
   transform: rotate(180deg);
 }
+
+.new-product__product-switch-link:hover {
+  opacity: 0.6;
+}
+
+.new-product__product-switch-link:active {
+  opacity: 0.2;
+}
+
 .new-product__product-preview {
   display: none;
 }
@@ -70,9 +91,18 @@
   right: 10px;
 }
 
-.new-product__product__svg-like {
+.new-product__product-svg-like {
   width: 19px;
   height: 17px;
+}
+
+.new-product__product-like:hover .new-product__product-svg-like {
+  stroke: red;
+  fill: red;
+}
+
+.new-product__product-like:active .new-product__product-svg-like {
+  opacity: 0.4;
 }
 
 .new-product__product-switch-preview {
@@ -102,6 +132,14 @@
   transform: rotate(180deg);
 }
 
+.new-product__product-switch-link-img:hover {
+  opacity: 0.6;
+}
+
+.new-product__product-switch-link-img:active {
+  opacity: 0.2;
+}
+
 .new-product__product-description-name,
 .new-product__product-description-price {
   margin: $margin-auto;
@@ -123,7 +161,7 @@
 .new-product__product-description-price {
   position: relative;
   margin-right: 72px;
-  width: 73px;
+  width: 76px;
   line-height: 14px;
 }
 
@@ -147,6 +185,15 @@
   font-weight: 300;
   color: $main-color;
   text-align: center;
+}
+
+.new-product__see-all-link:hover {
+  text-decoration: none;
+}
+
+.new-product__see-all-link:active {
+  text-shadow: 0 0 10px #000000;
+  opacity: 0.4;
 }
 
 @media (min-width: $tablet-width) {
@@ -185,12 +232,12 @@
     margin-bottom: 0;
   }
 
-  .new-product__product__svg-like {
+  .new-product__product-svg-like {
     width: 20px;
     height: 17px;
   }
 
-  .new-product__product__svg-like--fill {
+  .new-product__product-svg-like--fill {
     fill: #bab8b7;
   }
 
@@ -297,7 +344,7 @@
     right: 19px;
   }
 
-  .new-product__product__svg-like {
+  .new-product__product-svg-like {
     width: 26px;
     height: 23px;
   }

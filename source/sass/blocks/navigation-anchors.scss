@@ -62,4 +62,13 @@
     height: 94px;
     background-color: $main-color;
   }
+
+  .navigation-anchors__item-link:hover:not(.navigation-anchors__item-link--active) {
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .navigation-anchors__item-link:active:not(.navigation-anchors__item-link--active) {
+    opacity: 0.4;
+  }
 }

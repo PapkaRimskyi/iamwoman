@@ -11,6 +11,17 @@
   cursor: pointer;
 }
 
+.button:hover {
+  box-shadow: 1px 0 3px 0 #000000 inset;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 0 10px 0 #000000 inset;
+  background-color: darkred;
+}
+
 @media (min-width: $desktop-width) {
   .button {
     width: 167px;

@@ -47,6 +47,16 @@
   text-decoration: none;
 }
 
+.contacts__table-cell-link:hover {
+  font-weight: 600;
+  color: #837388;
+  opacity: 0.6;
+}
+
+.contacts__table-cell-link:active {
+  opacity: 0.3;
+}
+
 .contacts__table-cell-list {
   margin: 0;
   padding: 0;

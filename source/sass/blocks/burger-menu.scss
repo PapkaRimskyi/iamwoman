@@ -8,6 +8,14 @@
   display: flex;
 }
 
+.burger-menu__link:hover {
+  opacity: 0.4;
+}
+
+.burger-menu__link:active {
+  opacity: 0.1;
+}
+
 .burger-menu__sellout-18 {
   display: none;
 }

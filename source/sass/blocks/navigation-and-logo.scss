@@ -24,6 +24,14 @@
   display: block;
 }
 
+.navigation-and-logo__navigation-link:hover {
+  opacity: 0.4;
+}
+
+.navigation-and-logo__navigation-link:active {
+  opacity: 0.1;
+}
+
 .navigation-and-logo__navigation-svg-icon {
   width: 16px;
   height: 16px;
