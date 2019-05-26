@@ -543,11 +543,19 @@
           </div>
         </section>
       </div>
+      <div class="blog__slider-container">
+        <div class="blog_slider-text-container">
+          <p class="blog__slider-counter blog__slider-counter--margin"><span class="blog__slider-counter blog__slider-counter--current-slide">01/</span><sub>4</sub></p>
+        </div>
+        <div class="blog__slider-line">
+          <a class="blog__slider-pin" aria-label="Ползунок переключения слайдеров"></a>
+        </div>
+      </div>
       <a href="#" class="blog__blog-link">Перейти в блог</a>
     </section>
     <section class="subscribe">
       <h2 class="visually-hidden">Раздел с подпиской на рассылки новостей от I AM WOMEN</h2>
-      <form action="https://echo.htmlacademy.ru" method="post" class="subscribe__form">
+      <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" class="subscribe__form">
         <p class="subscribe__get-discount">Подпишись на новости I&nbsp;AM&nbsp;WOMEN<br> и получите скидку 5% на&nbsp;следующую покупку</p>
         <input type="email" name="email" class="subscribe__form-email" placeholder="Ваш E-mail" required>
         <button class="subscribe__form-submit button" type="submit">Подписаться</button>
@@ -672,7 +680,9 @@
               <p class="contacts__table-cell-name contacts__table-cell-name-padding-bottom-2">Получи скидку 5%</p>
             </th>
             <td class="contacts__table-data">
-              <input type="email" name="email" class="contacts__input-email" placeholder="Ваш E-mail" required>
+              <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" class="contacts__form-input" autocomplete="off">
+                <input type="email" name="email" class="contacts__input-email" placeholder="Ваш E-mail" required>
+              </form>
             </td>
           </tr>
           <tr class="contacts__table-row contacts__table-row--system-investing-display">
