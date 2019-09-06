@@ -1,19 +1,19 @@
 (function () {
-  var leftArrow = document.querySelector('.switch-arrow-left');
-  var rightArrow = document.querySelector('.switch-arrow-right');
-  var newProductCollection = document.querySelectorAll('.new-product__product-preview');
-  var activeClassName = 'new-product__product-preview--active';
-  var sliderIndex = 2;
+  const leftArrow = document.querySelector('.switch-arrow-left');
+  const rightArrow = document.querySelector('.switch-arrow-right');
+  const newProductCollection = document.querySelectorAll('.new-product__product-preview');
+  const activeClassName = 'new-product__product-preview--active';
+  const sliderIndex = 2;
 
-  var removeActiveClass = function (coll, activeCls) {
-    for (var i = 0; i < coll.length; i++) {
+  let removeActiveClass = function (coll, activeCls) {
+    for (let i = 0; i < coll.length; i++) {
       if (coll[i].classList.contains(activeCls)) {
         coll[i].classList.remove(activeCls);
       }
     }
   }
 
-  var showSlider = function (n) {
+  let showSlider = function (n) {
     if (n > newProductCollection.length) {
       sliderIndex = 1;
     }
@@ -24,7 +24,7 @@
     newProductCollection[sliderIndex - 1].classList.add('new-product__product-preview--active');
   }
 
-  var plusSlider = function (n) {
+  let plusSlider = function (n) {
     showSlider(sliderIndex += n);
   }
 

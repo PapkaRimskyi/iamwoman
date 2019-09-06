@@ -125,6 +125,7 @@
 
 @media (min-width: $tablet-width) {
   .blog {
+    position: relative;
     margin-bottom: 105px;
     width: 710px;
   }
@@ -166,6 +167,12 @@
 
   .blog__article-info-text {
     letter-spacing: 0.9px;
+  }
+
+  .blog__slider-container {
+    position: absolute;
+    top: 4px;
+    right: 0;
   }
 }
 
@@ -209,6 +216,32 @@
     padding: 0;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .blog__slider-container {
+    position: absolute;
+    top: -1px;
+    right: 2px;
+  }
+
+  .blog__slider-container,
+  .blog__slider-line {
+    width: 351px;
+  }
+
+  .blog__slider-counter {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .blog__slider-counter sub {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .blog__slider-pin {
+    left: 51px;
+    width: 92px;
   }
 
   .blog__blog-link {

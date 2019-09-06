@@ -1,15 +1,15 @@
 (function () {
-  var projectHeader = document.querySelector('.project-header');
-  var newCollectionProduct = document.querySelectorAll('.new-collection__product');
-  var collectionSwitchLeft = document.querySelector('.collection-switch-left');
-  var collectionSwitchRight = document.querySelector('.collection-switch-right');
-  var activeClassName = 'new-collection__product--active';
-  var projectHeaderBgCollection = ['project-header--product1', 'project-header--product2', 'project-header--product3'];
+  const projectHeader = document.querySelector('.project-header');
+  const newCollectionProduct = document.querySelectorAll('.new-collection__product');
+  const collectionSwitchLeft = document.querySelector('.collection-switch-left');
+  const collectionSwitchRight = document.querySelector('.collection-switch-right');
+  const activeClassName = 'new-collection__product--active';
+  const projectHeaderBgCollection = ['project-header--product1', 'project-header--product2', 'project-header--product3'];
 
-  var productIndex = 1;
+  let productIndex = 1;
 
-  var switchProductBG = function () {
-    for (var i = 0; i < newCollectionProduct.length; i++) {
+  let switchProductBG = function () {
+    for (let i = 0; i < newCollectionProduct.length; i++) {
       if (newCollectionProduct[i].classList.contains(activeClassName)) {
         projectHeader.className = 'project-header';
 
@@ -18,8 +18,8 @@
     }
   }
 
-  var showNextProduct = function (n) {
-    var currentProductIndex = document.querySelector('.new-collection__product-currently');
+  let showNextProduct = function (n) {
+    let currentProductIndex = document.querySelector('.new-collection__product-currently');
     if (n > newCollectionProduct.length) {
       productIndex = 1;
     }
@@ -32,7 +32,7 @@
     switchProductBG();
   }
 
-  var plusSlider = function (n) {
+  let plusSlider = function (n) {
     showNextProduct(productIndex += n);
   }
 
